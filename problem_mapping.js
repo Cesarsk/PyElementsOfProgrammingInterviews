@@ -910,7 +910,7 @@ problem_mapping = {
                 "total": 78
             },
             "Python: is_valid_parenthesization.py": {
-                "passed": 0,
+                "passed": 78,
                 "total": 78
             }
         },
