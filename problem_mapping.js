@@ -924,7 +924,7 @@ problem_mapping = {
                 "total": 255
             },
             "Python: directory_path_normalization.py": {
-                "passed": 0,
+                "passed": 255,
                 "total": 255
             }
         },
