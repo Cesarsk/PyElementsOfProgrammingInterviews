@@ -18,9 +18,8 @@ def lca(node0: BinaryTreeNode, node1: BinaryTreeNode) -> Optional[BinaryTreeNode
 
         return depth
 
-    # computing the nodes' depth
+    # computing the nodes' depths
     depth0, depth1 = get_depth(node0), get_depth(node1)
-    print(depth0,depth1)
 
     # move up the node that has a higher depth
     while depth0 != depth1:
