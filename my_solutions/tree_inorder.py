@@ -8,9 +8,6 @@ def inorder_traversal(tree: BinaryTreeNode) -> List[int]:
     s = []
     result = []
 
-    if not tree:
-        return []
-
     while s or tree:
         if tree:
             s.append(tree)
