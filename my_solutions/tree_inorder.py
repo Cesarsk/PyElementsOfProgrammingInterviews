@@ -11,10 +11,6 @@ def inorder_traversal(tree: BinaryTreeNode) -> List[int]:
     if not tree:
         return []
 
-    print(tree)
-    print(tree.data)
-    print(tree.left)
-    print(tree.right)
     while s or tree:
         if tree:
             s.append(tree)
