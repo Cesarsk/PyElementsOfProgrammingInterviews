@@ -1108,7 +1108,7 @@ problem_mapping = {
                 "total": 3851
             },
             "Python: kth_node_in_tree.py": {
-                "passed": 0,
+                "passed": 3851,
                 "total": 3851
             }
         },
