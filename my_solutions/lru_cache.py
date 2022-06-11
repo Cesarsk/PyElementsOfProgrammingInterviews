@@ -4,6 +4,7 @@ from test_framework import generic_test
 from test_framework.test_failure import TestFailure
 
 
+# O(1) each lookup. O(1) for updating the queue. O(1) overall
 class LruCache:
     def __init__(self, capacity: int) -> None:
         self._isbn_hash_table = collections.OrderedDict()
