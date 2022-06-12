@@ -17,7 +17,7 @@ def lca(node0: BinaryTreeNode, node1: BinaryTreeNode) -> Optional[BinaryTreeNode
     while iter_0 or iter_1:
         if iter_0:
             # if it's present in the hash table we found the ancestor
-            if iter_0 in hash_table:
+            if iter_0 in hash_table: 
                 return iter_0
 
             hash_table.add(iter_0)
