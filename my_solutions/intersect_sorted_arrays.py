@@ -2,6 +2,7 @@ from typing import List
 
 from test_framework import generic_test
 
+[1,2,3]
 
 def intersect_two_sorted_arrays(A: List[int], B: List[int]) -> List[int]:
     len_a, len_b = len(A), len(B)
