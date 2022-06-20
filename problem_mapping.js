@@ -1804,7 +1804,7 @@ problem_mapping = {
                 "total": 3139
             },
             "Python: is_tree_a_bst.py": {
-                "passed": 0,
+                "passed": 3139,
                 "total": 3139
             }
         },
@@ -1832,7 +1832,7 @@ problem_mapping = {
                 "total": 949
             },
             "Python: k_largest_values_in_bst.py": {
-                "passed": 0,
+                "passed": 949,
                 "total": 949
             }
         },
