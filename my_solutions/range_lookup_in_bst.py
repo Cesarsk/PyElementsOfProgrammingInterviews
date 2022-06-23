@@ -7,6 +7,9 @@ from test_framework import generic_test
 Interval = collections.namedtuple('Interval', ('left', 'right'))
 
 
+# Complexity is tricky. The recursions occurr a number of times
+# before the interval has reached, said n, and the number of times for every item of the interval, say m.
+# Should be O(n+m)
 def range_lookup_in_bst(tree: BstNode, interval: Interval) -> List[int]:
     def range_lookup_in_bst_helper(tree):
         if tree is None:
