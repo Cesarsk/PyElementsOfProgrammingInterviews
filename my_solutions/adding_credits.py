@@ -9,6 +9,7 @@ from test_framework.test_failure import TestFailure
 #      credit_to_client will be a BST
 #      RBTree({-1: {'Thomas'}, 29: {'Larry'}, 70: {'Vincent'}})
 
+# complexity for lookup, insert and delete is O(log(n)). For Max operation is O(1) according to the library used
 class ClientsCreditsInfo:
     def __init__(self):
         self._increment = 0
