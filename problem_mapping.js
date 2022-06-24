@@ -1944,7 +1944,7 @@ problem_mapping = {
                 "total": 201
             },
             "Python: adding_credits.py": {
-                "passed": 0,
+                "passed": 201,
                 "total": 201
             }
         }
