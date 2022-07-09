@@ -21,10 +21,12 @@ def generate_balanced_parentheses(num_pairs: int) -> List[str]:
             result.append(valid_prefix)
         return result
 
-    return directed_generate_balanced_parentheses(num_pairs,
+    res = directed_generate_balanced_parentheses(num_pairs,
                                                   num_pairs,
                                                   valid_prefix='')
 
+    print(res)
+    return res
 
 def generate_balanced_parentheses_pythonic(num_pairs, num_left_open=0):
     if not num_pairs:
