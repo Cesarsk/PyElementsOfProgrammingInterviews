@@ -14,9 +14,10 @@ def number_of_ways(n: int, m: int) -> int:
         ways_top = 0 if y == 0 else recursion(x, y - 1)
         ways_left = 0 if x == 0 else recursion(x - 1, y)
 
-        # the result is given by the sum of the two subproblems left and top
+        # the result is given by the sum of the two sub-problems left and top
         return ways_left + ways_top
 
+    # n is the number of rows and m the number of columns
     return recursion(n - 1, m - 1)
 
 
