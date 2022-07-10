@@ -2198,7 +2198,7 @@ problem_mapping = {
                 "total": 5906
             },
             "Python: binomial_coefficients.py": {
-                "passed": 0,
+                "passed": 5906,
                 "total": 5906
             }
         },
