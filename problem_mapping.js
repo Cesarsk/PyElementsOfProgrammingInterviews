@@ -2376,7 +2376,7 @@ problem_mapping = {
                 "total": 1005
             },
             "Python: minimum_points_covering_intervals.py": {
-                "passed": 0,
+                "passed": 103,
                 "total": 103
             },
             "Python: two_sum.py": {
