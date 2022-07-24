@@ -12,33 +12,36 @@ WHITE, BLACK = range(2)
 Coordinate = collections.namedtuple('Coordinate', ('x', 'y'))
 
 
-def search_maze(maze: List[List[int]], s: Coordinate,
-                e: Coordinate) -> List[Coordinate]:
-
-    # Perform DFS to find a feasible path.
-    def search_maze_helper(cur):
-        # Checks cur is within maze and is a white pixel.
+def search_maze(maze: List[List[int]], s: Coordinate, e: Coordinate) -> List[Coordinate]:
+    def recursive_dfs(cur):
         if not (0 <= cur.x < len(maze)
                 and 0 <= cur.y < len(maze[cur.x])
                 and maze[cur.x][cur.y] == WHITE):
+            # not inside the maze
             return False
+
+        # exploring
         path.append(cur)
         maze[cur.x][cur.y] = BLACK
-        if cur == e:
+        if cur == e:  # solution found
             return True
 
-        if any(
-                map(
-                    search_maze_helper,
-                    map(Coordinate, (cur.x - 1, cur.x + 1, cur.x, cur.x),
-                        (cur.y, cur.y, cur.y - 1, cur.y + 1)))):
+        next_coordinates = (Coordinate(cur.x - 1, cur.y),
+                            Coordinate(cur.x + 1, cur.y),
+                            Coordinate(cur.x, cur.y - 1),
+                            Coordinate(cur.x, cur.y + 1))
+
+        if any(map(recursive_dfs, next_coordinates)):
             return True
-        # Cannot find a path, remove the entry added in path.append(cur).
+
+        # no path found
         del path[-1]
         return False
 
-    path: List[Coordinate] = []
-    search_maze_helper(s)
+    path = []
+    if not recursive_dfs(s):
+        return []
+
     return path
 
 
