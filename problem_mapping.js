@@ -2522,7 +2522,7 @@ problem_mapping = {
                 "total": 91
             },
             "Python: graph_clone.py": {
-                "passed": 0,
+                "passed": 91,
                 "total": 91
             }
         },
