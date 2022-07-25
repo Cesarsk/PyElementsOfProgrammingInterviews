@@ -2536,7 +2536,7 @@ problem_mapping = {
                 "total": 85
             },
             "Python: is_circuit_wirable.py": {
-                "passed": 0,
+                "passed": 85,
                 "total": 85
             }
         },
